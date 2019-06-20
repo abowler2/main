@@ -8,24 +8,28 @@ let mySwiper = new Swiper('.swiper-container', {
 
 function Drag() {
   return(
-    <div className="swiper-container">
-      <div className="swiper-wrapper">
-
-        <div className="swiper-slide">Slide 1</div>
-        <div className="swiper-slide">Slide 2</div>
-        <div className="swiper-slide">Slide 3</div>
-
-      </div>
-
-      <div className="swiper-pagination"></div>
-
-
-      <div className="swiper-button-prev"></div>
-      <div className="swiper-button-next"></div>
-
-
-      <div className="swiper-scrollbar"></div>
-    </div>
+    <Drag className="grid-container">
+      <div className="column-24 leader-3">
+        <div className="column-4 pre-2">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        </div>        
+      </div>  
+    </Drag>
   );
 };
 
