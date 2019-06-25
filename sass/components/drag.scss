@@ -16,7 +16,7 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  height: 50vh;
+  height: 40vh;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,21 +34,31 @@ body {
 
 .swiper-button-next{
   right: 500px;
+  width: auto;
   background-image: none;
   color: #f1af21;  /* fallback for old browsers */
   color: -webkit-linear-gradient(to right, #ec2242, #f1af21);  /* Chrome 10-25, Safari 5.1-6 */
   color: linear-gradient(to right, #ec2242, #f1af21); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-size: 10em;
   
 }
 .swiper-button-prev{
   left: 500px;
+  width: auto;
   background-image: none;
   color: #f1af21;  /* fallback for old browsers */
   color: -webkit-linear-gradient(to right, #ec2242, #f1af21);  /* Chrome 10-25, Safari 5.1-6 */
   color: linear-gradient(to right, #ec2242, #f1af21); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.swiper-button-prev-sm{
+  font-size: 3em;
+}
+.swiper-button-prev-lg {
+  font-size: 3em;
+}
 .swiper-button-next-sm{
-  font-size: 11em;
+  font-size: 3em;
+}
+.swiper-button-next-lg {
+  font-size: 3em;
 }
