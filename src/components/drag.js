@@ -15,7 +15,6 @@ function Drag() {
   return (
     <div className="grid-container">
       <div className="column-24">
-        <h1 >BLOG</h1>
         <div className="swiper-container">
           <div className="swiper-wrapper">
             <div className="swiper-slide">Slide 1</div>
@@ -29,7 +28,7 @@ function Drag() {
             <div className="swiper-slide">Slide 9</div>
             <div className="swiper-slide">Slide 10</div>
           </div>
-          <div className="swiper-button-next"><span className="swiper-button-prev-lg">&gt;</span> <span className="swiper-button-prev-sm">&gt;</span></div>
+          <div className="swiper-button-next"><span className="swiper-button-prev-sm">&gt;</span> <span className="swiper-button-prev-lg">&gt;</span></div>
           <div className="swiper-button-prev"><span className="swiper-button-next-lg">&lt;</span> <span className="swiper-button-next-sm">&lt;</span> </div>
         </div>
       </div>

@@ -34,7 +34,9 @@ body {
 
 .swiper-button-next{
   right: 500px;
-  width: 8VW;
+  width: 15VW;
+  height: auto;
+
   background-image: none;
   color: #f1af21;  /* fallback for old browsers */
   color: -webkit-linear-gradient(to right, #ec2242, #f1af21);  /* Chrome 10-25, Safari 5.1-6 */
@@ -44,6 +46,7 @@ body {
 .swiper-button-prev{
   left: 500px;
   width: auto;
+  height: auto;
   background-image: none;
   color: #f1af21;  /* fallback for old browsers */
   color: -webkit-linear-gradient(to right, #ec2242, #f1af21);  /* Chrome 10-25, Safari 5.1-6 */
@@ -51,14 +54,21 @@ body {
 }
 
 .swiper-button-prev-sm{
-  font-size: 3em;
+  font-size: 6em;
+  position: relative;
+  left: 20px;
+  bottom: 18px;
 }
 .swiper-button-prev-lg {
-  font-size: 3em;
+  font-size: 10em;
 }
 .swiper-button-next-sm{
-  font-size: 3em;
+  font-size: 6em;
+  position: relative;
+  left: -20px;
+  bottom: 18px;
+ 
 }
 .swiper-button-next-lg {
-  font-size: 3em;
+  font-size: 10em;
 }
