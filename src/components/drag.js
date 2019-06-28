@@ -29,6 +29,7 @@ function Drag() {
             <div className="swiper-slide">Slide 10</div>
           </div>
           <div className="swiper-button-next"><span className="swiper-button-prev-sm">&gt;</span> <span className="swiper-button-prev-lg">&gt;</span></div>
+          <div className="circle">Drag</div>
           <div className="swiper-button-prev"><span className="swiper-button-next-lg">&lt;</span> <span className="swiper-button-next-sm">&lt;</span> </div>
         </div>
       </div>
