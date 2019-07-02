@@ -8,10 +8,10 @@ body {
 }
 .swiper-container {
   width: 100%;
- 
+  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
-  max-height: 850px;
+  max-height: 900px;
 }
 .swiper-slide {
   text-align: center;
@@ -34,17 +34,24 @@ body {
 }
 
 #spred{
-  min-width: 250px !important;
+  min-width: 300px !important;
   margin: 15px !important;
 
   
 }
 
 .swiper-button-next{
-  right: 500px;
-  width: auto;
+  right: 20vw;
+  display: flex;
+  position: absolute;
+  width: 15%;
   height: auto;
-  top: 40%;
+  top: 0;
+  bottom: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
   background-image: none;
   color: #175cde;  /* fallback for old browsers */
   color: -webkit-linear-gradient(to right, #ec2242, #f1af21);  /* Chrome 10-25, Safari 5.1-6 */
@@ -52,51 +59,68 @@ body {
   
 }
 .swiper-button-prev{
-  left: 500px;
-  width: auto;
+  left: 20vw;
+  display: flex;
+  position: absolute;
+  width: 15%;
   height: auto;
-  top: 40%;
+  top: 0;
+  bottom: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
   background-image: none;
   color: #fc5c88;  /* fallback for old browsers */
   color: -webkit-linear-gradient(to right, #ec2242, #f1af21);  /* Chrome 10-25, Safari 5.1-6 */
   color: linear-gradient(to right, #ec2242, #f1af21); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+.circle_container{
+  display: flex;
+  position: absolute;
+  width: 15%;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .circle {
-  width: 10vw;
-  height: 10vw;
+  width: 180px;
+  height: 180px;
+  left: 300%;
   border-radius: 50%;
-  font-size: 3vw;
+  font-size: 2em;
   color: #fff;
-  line-height: 10vw;
+  line-height: 180px;
   text-align: center;
   background: linear-gradient(to right, #fc5c88, #175cde);
   position: absolute;
-  left: auto;
-
-  top: 35%;
-  
-  z-index: 10;
-  
-  right: 43%;
+  top: 35%;  
+  z-index: 10;  
+  opacity: 0.5;
 
 }
 
 .swiper-button-prev-sm{
+ 
   font-size: 5em;
   position: relative;
-  left: 20px;
-  bottom: 10px;
+  left: -20px;
 }
 .swiper-button-prev-lg {
   font-size: 7em;
 }
 .swiper-button-next-sm{
+
   font-size: 5em;
   position: relative;
-  left: -20px;
-  bottom: 10px;
- 
+  left: 20px;
+
 }
 .swiper-button-next-lg {
   font-size: 7em;
