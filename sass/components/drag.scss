@@ -41,10 +41,10 @@ body {
 }
 
 .swiper-button-next{
-  right: 18vw;
+  right: 500px;
   width: auto;
   height: auto;
-  top: 35%;
+  top: 40%;
   background-image: none;
   color: #175cde;  /* fallback for old browsers */
   color: -webkit-linear-gradient(to right, #ec2242, #f1af21);  /* Chrome 10-25, Safari 5.1-6 */
@@ -52,10 +52,10 @@ body {
   
 }
 .swiper-button-prev{
-  left: 18vw;
+  left: 500px;
   width: auto;
   height: auto;
-  top: 35%;
+  top: 40%;
   background-image: none;
   color: #fc5c88;  /* fallback for old browsers */
   color: -webkit-linear-gradient(to right, #ec2242, #f1af21);  /* Chrome 10-25, Safari 5.1-6 */
@@ -63,41 +63,41 @@ body {
 }
 
 .circle {
-  width: 15vw;
-  height: 15vw;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
-  font-size: 4vw;
+  font-size: 3vw;
   color: #fff;
-  line-height: 15vw;
+  line-height: 10vw;
   text-align: center;
   background: linear-gradient(to right, #fc5c88, #175cde);
   position: absolute;
   left: auto;
 
-  top: 25%;
+  top: 35%;
   
   z-index: 10;
   
-  right: 40%;
+  right: 43%;
 
 }
 
 .swiper-button-prev-sm{
-  font-size: 6em;
+  font-size: 5em;
   position: relative;
   left: 20px;
-  bottom: 18px;
+  bottom: 10px;
 }
 .swiper-button-prev-lg {
-  font-size: 10em;
+  font-size: 7em;
 }
 .swiper-button-next-sm{
-  font-size: 6em;
+  font-size: 5em;
   position: relative;
   left: -20px;
-  bottom: 18px;
+  bottom: 10px;
  
 }
 .swiper-button-next-lg {
-  font-size: 10em;
+  font-size: 7em;
 }
