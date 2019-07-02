@@ -8,9 +8,10 @@ body {
 }
 .swiper-container {
   width: 100%;
-  height: auto;
+ 
   margin-left: auto;
   margin-right: auto;
+  max-height: 850px;
 }
 .swiper-slide {
   text-align: center;
@@ -33,7 +34,10 @@ body {
 }
 
 #spred{
-  min-width: 100%;
+  min-width: 250px !important;
+  margin: 15px !important;
+
+  
 }
 
 .swiper-button-next{
@@ -59,12 +63,12 @@ body {
 }
 
 .circle {
-  width: 5em;
-  height: 5em;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50%;
-  font-size: 50px;
+  font-size: 4vw;
   color: #fff;
-  line-height: 5em;
+  line-height: 15vw;
   text-align: center;
   background: linear-gradient(to right, #fc5c88, #175cde);
   position: absolute;
