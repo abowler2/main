@@ -1,22 +1,17 @@
 import Swiper from 'swiper';
 import '../../node_modules/swiper/dist/css/swiper.min.css';
 
-let swiper = new Swiper('.swiper-container', {
-  slidesPerView: 4,
-  slidesPerColumn: 2,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+
 
 function Drag() {
   return (
-    <div className="grid-container">
-      <div className="column-24">
+    <div className="grid-container ">
+      <div className="column-24 leader-3">
         <div className="swiper-container">
           <div className="swiper-wrapper">
+            <div id="spred" className="swiper-slide">C/O https://placeholder.com/</div>
+            <div id="spred" className="swiper-slide">C/O https://placeholder.com/</div>
+            <div id="spred" className="swiper-slide">C/O https://placeholder.com/</div>
             <div id="spred" className="swiper-slide">C/O https://placeholder.com/</div>
             <div id="spred" className="swiper-slide">C/O https://placeholder.com/</div>
             <div id="spred" className="swiper-slide">C/O https://placeholder.com/</div>
@@ -42,5 +37,14 @@ function Drag() {
     </div>
   );
 };
+
+let swiper = new Swiper('.swiper-container', {
+  slidesPerView: 4,
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 export default Drag;
