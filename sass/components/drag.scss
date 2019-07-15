@@ -1,27 +1,18 @@
 
- html, body {
-  position: relative;
-  height: 100%;
-} 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color:#000;
-  margin: 0;
-  padding: 0;
 
-}
 .swiper-container {
   width: 100%;
   height: 100%;
+  &:hover #myCirlce,
+  &:active #myCircle{
+    display: none;
+  }  
 }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  height: 40vh;
-  /* Center slide text verticalldy */
+  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -36,46 +27,46 @@ body {
   align-items: center;
 }
 
-
-
 .circle_container{
   display: flex;
   position: absolute;
+  left: 39vw;
   width: 15%;
   height: auto;
-  top: 0;
-  bottom: 0;
+  top: 40px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   justify-content: center;
+  
 }
+
+#myCirlce{
+  display: block;
+}
+
 .circle {
-  width: 180px;
-  height: 180px;
-  left: 300%;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   font-size: 2em;
   color: #fff;
-  line-height: 180px;
+  line-height: 80px;
   text-align: center;
   background: linear-gradient(to right, #fc5c88, #175cde);
   position: absolute;
   z-index: 10;  
-  opacity: 0.5;
-  transition: left 0.5s;
-
+  opacity: .8;
+  transition: left 0.5s;    
 }
 
-
 .swiper-button-next{
-  right: 20vw;
+  right: 18vw;
   display: flex;
   position: absolute;
   width: 15%;
   height: auto;
-  top: 0;
-  bottom: 0;
+  top: 20px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -87,13 +78,12 @@ body {
   
 }
 .swiper-button-prev{
-  left: 20vw;
+  left: 18vw;
   display: flex;
   position: absolute;
   width: 15%;
   height: auto;
-  top: 0;
-  bottom: 0;
+  top: 20px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -104,82 +94,61 @@ body {
   color: linear-gradient(to right, #ec2242, #f1af21); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.swiper-button-prev-sm{
- 
-  font-size: 5em;
+.swiper-button-prev-sm{ 
+  font-size: 2em;
   position: relative;
-  left: -20px;
+  left: -10px;
 }
-.swiper-button-prev-lg {
-  font-size: 7em;
+.swiper-button-prev-lg,.swiper-button-next-lg {
+  font-size: 4em;
 }
 .swiper-button-next-sm{
-
-  font-size: 5em;
+  font-size: 2em;
   position: relative;
-  left: 20px;
-
-}
-.swiper-button-next-lg {
-  font-size: 7em;
-}
+  left: 10px;
+} 
 
 
-
-
-#spred{
-  min-width: 300px !important;
-  margin: 15px !important;
-
-  
-}
-
-
-
-@media only screen and (max-width: 1050px) {
+@media only screen and (min-width: 766px) {
+  .circle_container{
+    top: 44vh;
+    left: 40vw;
+  }
   .circle {
-  width: 150px;
-  height: 150px;
-  left: 270%;
-  line-height: 150px;
-  }
-  .swiper-button-prev-lg,.swiper-button-next-lg{ 
-    font-size: 6em;
-  }
-  .swiper-button-next-sm,.swiper-button-prev-sm{ 
-    font-size: 4em;
-  }
-}
+    width: 110px;
+    height: 110px;
+    font-size: 3em;
+    line-height: 110px;
+    bottom: 0px;
+    bottom: -45px;
 
-@media only screen and (max-width: 650px) {
-  .circle {
-  width: 130px;
-  height: 130px;
-  left: 240%;
-  line-height: 130px;
-
-  } 
-}
-
-@media only screen and (max-width: 650px) {
-  .circle {
-  width: 80px;
-  height: 80px;
-  left: 270%;
-  line-height: 80px;
-  font-size: 2.5em;
-  }
-  .swiper-button-prev-lg,.swiper-button-next-lg{ 
-    font-size: 6em;
-  }
-  .swiper-button-next-sm,.swiper-button-prev-sm{ 
-    display: none;
   }
   .swiper-button-next{
-    right: 10vw;
+    top: 31vh;
+    right: 24vw;
+    bottom: 0px;
   }
   .swiper-button-prev{
-    left: 10vw;
+    top: 31vh;
+    left: 24vw;
+    bottom: 0px;
   }
 
+  .swiper-button-prev-lg, .swiper-button-next-lg {
+    font-size: 8em;
+  }
+  .swiper-button-prev-sm,.swiper-button-next-sm{
+  
+    font-size: 5em;
+  }
+
+
+}
+
+
+@media only screen and (min-width: 1044px) {
+  .circle_container{
+    top: 48vh;
+    left: 40vw;
+  }
 }
