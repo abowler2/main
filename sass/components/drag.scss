@@ -1,4 +1,9 @@
-
+#iesdBg {
+  background: url('../static/images/desktop/inland-empire-software-development-background-light.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 
 
 .swiper-container {
   width: 100%;
@@ -30,10 +35,10 @@
 .circle_container{
   display: flex;
   position: absolute;
-  left: 39vw;
-  width: 15%;
+  left: 45vw;
+  width: auto;
   height: auto;
-  top: 40px;
+  top: 45px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -109,10 +114,10 @@
 } 
 
 
-@media only screen and (min-width: 766px) {
+@media only screen and (min-width: 768px) {
   .circle_container{
-    top: 44vh;
-    left: 40vw;
+    top: 240px;;
+    left: 47vw;
   }
   .circle {
     width: 110px;
@@ -124,12 +129,12 @@
 
   }
   .swiper-button-next{
-    top: 31vh;
+    top: 24vh;
     right: 24vw;
     bottom: 0px;
   }
   .swiper-button-prev{
-    top: 31vh;
+    top: 24vh;
     left: 24vw;
     bottom: 0px;
   }
@@ -146,7 +151,7 @@
 }
 
 
-@media only screen and (min-width: 1044px) {
+@media only screen and (min-width: 1024PX) {
   .circle_container{
     top: 48vh;
     left: 40vw;

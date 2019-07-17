@@ -53,9 +53,9 @@ const placeholder = [
 
 function Drag() {
   return (
-    <div className="grid-container">
+    <div className="grid-container"  id="iesdBg" >
       <div className="column-24 " >
-        <div id="iesdBg" className="swiper-container leader-1 trailer-1" >
+        <div className="swiper-container leader-1 trailer-1" >
           <div className="swiper-wrapper" >
             { placeholder.map(({key, image, alt}) => <div className="swiper-slide">
               <img id="draggerpic" key={key} src={image} alt={alt} /> </div>)}
@@ -66,17 +66,19 @@ function Drag() {
                 <img id="draggerpic" key={key} src={image} alt={alt} /> </div>)}
             </div>
           </div>
-          <div className="swiper-button-prev">
-            <span className="swiper-button-prev-lg">&lt;</span>
-            <span className="swiper-button-prev-sm">&lt;</span>
-          </div>
-          <div className="circle_container">
-            <div id="myCirlce" className="circle">Drag</div>
-          </div>
-          <div className="swiper-button-next">
-            <span className="swiper-button-next-sm">&gt;</span>
-            <span className="swiper-button-next-lg">&gt;</span>
-          </div>
+          <div className="column-24 " >
+            <div className="swiper-button-prev">
+              <span className="swiper-button-prev-lg">&lt;</span>
+              <span className="swiper-button-prev-sm">&lt;</span>
+            </div>
+            <div className="circle_container">
+              <div id="myCirlce" className="circle">Drag</div>
+            </div>
+            <div className="swiper-button-next">
+              <span className="swiper-button-next-sm">&gt;</span>
+              <span className="swiper-button-next-lg">&gt;</span>
+            </div>
+          </div>          
         </div>
       </div>
     </div>
