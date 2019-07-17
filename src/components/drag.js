@@ -2,7 +2,8 @@
 import Swiper from 'swiper';
 import '../../node_modules/swiper/dist/css/swiper.min.css';
 
-
+// Main config of the slider, check all varations here. https://idangero.us/swiper/demos/
+//click on cource code to look for diff, options.
 let swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
   spaceBetween: 10,
@@ -10,7 +11,7 @@ let swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // here are the breakpoints you can alter how many sides are seen and and the margin.
+// here are the breakpoints you can alter how many sides are seen and and the margin.
   breakpoints: {
     1840: {
       slidesPerView: 5,
@@ -35,7 +36,7 @@ let swiper = new Swiper('.swiper-container', {
   },
 });
 
-
+// place holder example of an array of objects that hold each image.
 const placeholder = [
   {key: 1, image: '../../static/images/placeholder/place1.jpg',
     alt: 'dragger pic'},
@@ -51,21 +52,25 @@ const placeholder = [
     alt: 'dragger pic'},
 ];
 
+
 function Drag() {
   return (
     <div className="grid-container"  id="iesdBg" >
       <div className="column-24 " >
         <div className="swiper-container leader-1 trailer-1" >
+          {/* inside here is the data that is dragable row 1*/}
           <div className="swiper-wrapper" >
             { placeholder.map(({key, image, alt}) => <div className="swiper-slide">
               <img id="draggerpic" key={key} src={image} alt={alt} /> </div>)}
           </div>
           <div id="iesdBg" className="swiper-container leader-1 trailer-1" >
+            {/* inside here is the data that is dragable row 1*/}
             <div className="swiper-wrapper" >
               { placeholder.map(({key, image, alt}) => <div className="swiper-slide">
                 <img id="draggerpic" key={key} src={image} alt={alt} /> </div>)}
             </div>
           </div>
+          {/* drag circle , prev, next buttons */}
           <div className="column-24 " >
             <div className="swiper-button-prev">
               <span className="swiper-button-prev-lg">&lt;</span>
@@ -78,7 +83,7 @@ function Drag() {
               <span className="swiper-button-next-sm">&gt;</span>
               <span className="swiper-button-next-lg">&gt;</span>
             </div>
-          </div>          
+          </div>
         </div>
       </div>
     </div>
