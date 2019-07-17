@@ -32,10 +32,15 @@
   align-items: center;
 }
 
+#myCirlce{
+  display: block;
+}
+
 .circle_container{
   display: flex;
   position: absolute;
   left: 45vw;
+  right: 45VW; 
   width: auto;
   height: auto;
   top: 45px;
@@ -44,10 +49,6 @@
   align-items: center;
   justify-content: center;
   
-}
-
-#myCirlce{
-  display: block;
 }
 
 .circle {
@@ -116,8 +117,9 @@
 
 @media only screen and (min-width: 768px) {
   .circle_container{
-    top: 240px;;
+    top: 35vh;;
     left: 47vw;
+    right: 47vw;
   }
   .circle {
     width: 110px;
@@ -152,8 +154,36 @@
 
 
 @media only screen and (min-width: 1024PX) {
-  .circle_container{
-    top: 48vh;
-    left: 40vw;
+  .circle_container {
+    // top: 37vh;
+    bottom: 12vh;
+    left: 33vw;
+    right: 33vw;
+}
+}
+
+@media only screen and (min-width: 2040PX) {
+  .circle {
+    width: 150px;
+    height: 150px;
+    font-size: 3.5em;
+    line-height: 150px;
   }
+  .circle_container {
+    // top: 37vh;
+    bottom: 12vh;left: 28vw;
+    right: 28vw;
+}
+
+
+.swiper-button-next{
+  top: 26vh;
+  right: 14vw;
+  bottom: 0px;
+}
+.swiper-button-prev{
+  top: 26vh;
+  left: 14vw;
+  bottom: 0px;
+}
 }
